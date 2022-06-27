@@ -1,0 +1,22 @@
+@use '../globals/colors.scss' as clr;
+@use '../util/' as *;
+
+html {
+	font-size: rem(14);
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+
+	background-color: clr.$bgc-salmon;
+
+	margin: 0;
+	padding: 0;
+}

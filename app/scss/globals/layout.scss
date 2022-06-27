@@ -1,0 +1,26 @@
+@use '../util' as *;
+
+.main {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	
+	padding-block: rem(28);
+	padding-inline: rem(18);
+	margin: 0 auto;
+
+	max-width: 695px;
+	height: 100vh;
+
+	@include breakpoint(medium) {
+		padding: 0;
+	}
+}
+
+.footer {
+	p {
+		@include breakpoint-down(small) {
+			display: none;
+		}
+	}
+}
